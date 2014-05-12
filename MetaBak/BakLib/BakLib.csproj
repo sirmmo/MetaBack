@@ -110,6 +110,12 @@
       <DependentUpon>WebAuth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\rsync.net\NetSync.csproj">
+      <Project>{bc2bf698-6612-4a95-966f-dda9e9f95ce6}</Project>
+      <Name>NetSync</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

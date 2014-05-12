@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakLib", "BakLib\BakLib.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaBak.Gui", "MetaBak.Gui\MetaBak.Gui.csproj", "{36DB2709-2A86-4BFB-A58C-4B28A5A20C9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSync", "..\..\rsync.net\NetSync.csproj", "{BC2BF698-6612-4A95-966F-DDA9E9F95CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{36DB2709-2A86-4BFB-A58C-4B28A5A20C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36DB2709-2A86-4BFB-A58C-4B28A5A20C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36DB2709-2A86-4BFB-A58C-4B28A5A20C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2BF698-6612-4A95-966F-DDA9E9F95CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2BF698-6612-4A95-966F-DDA9E9F95CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2BF698-6612-4A95-966F-DDA9E9F95CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2BF698-6612-4A95-966F-DDA9E9F95CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
