@@ -79,6 +79,14 @@
     <Compile Include="Drivers\RSyncBackup.cs" />
     <Compile Include="Drivers\SFTPBackup.cs" />
     <Compile Include="Drivers\SkyDriveBackup.cs" />
+    <Compile Include="SyncForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncForm.Designer.cs">
+      <DependentUpon>SyncForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncMode.cs" />
+    <Compile Include="SyncSetting.cs" />
     <Compile Include="WebAuth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +102,9 @@
   <ItemGroup>
     <EmbeddedResource Include="RemoteLogin.resx">
       <DependentUpon>RemoteLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncForm.resx">
+      <DependentUpon>SyncForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WebAuth.resx">
       <DependentUpon>WebAuth.cs</DependentUpon>
