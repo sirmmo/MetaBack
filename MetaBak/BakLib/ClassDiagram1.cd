@@ -1,75 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BakLib.BackupManager">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="3.5" Y="11.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACYAAAAAACAAADBQAAAABAQAAAgCAAAAQAAAAABQIAA=</HashCode>
+      <HashCode>ACYAAAgAACAAABBQgQAABAQAAAgCAAAAQAAAAABQIAA=</HashCode>
       <FileName>BackupManager.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="_drivers" />
+      <Field Name="stalkers" />
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BakLib.DropboxBackup">
-    <Position X="9.5" Y="6" Width="1.5" />
+    <Position X="9.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>DropboxBackup.cs</FileName>
+      <HashCode>AAAAAAAAACAAAEBAAAAAAAAAAAAAAAAIJAAAAAAAAAA=</HashCode>
+      <FileName>Drivers\DropboxBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.SkyDriveBackup">
-    <Position X="11.75" Y="6" Width="1.5" />
+    <Position X="12" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>SkyDriveBackup.cs</FileName>
+      <FileName>Drivers\SkyDriveBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.FTPBackup">
-    <Position X="4.75" Y="6" Width="1.5" />
+    <Position X="5.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAACAAAABAAAAAAAEACAAAAAAAMAAAAgAAAAI=</HashCode>
-      <FileName>FTPBackup.cs</FileName>
+      <FileName>Drivers\FTPBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.WebDavBackup">
-    <Position X="7.5" Y="6" Width="1.5" />
+    <Position X="7.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>WebDavBackup.cs</FileName>
+      <FileName>Drivers\WebDavBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.RSyncBackup">
-    <Position X="15.75" Y="6" Width="1.5" />
+    <Position X="16.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>RSyncBackup.cs</FileName>
+      <FileName>Drivers\RSyncBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.BackupDriverBase">
-    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAACAAAABAAAAAAAQAAABAAAAAIAAAAAEAAAA=</HashCode>
-      <FileName>BackupDriverBase.cs</FileName>
+      <FileName>Drivers\BackupDriverBase.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_backupMode" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BakLib.ActiveBackupDriverBase">
-    <Position X="7.5" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ActiveBackupDriverBase.cs</FileName>
+      <FileName>Drivers\ActiveBackupDriverBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.PassiveBackupDriverBase">
-    <Position X="14.75" Y="3.75" Width="1.5" />
+    <Position X="15.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PassiveBackupDriverBase.cs</FileName>
+      <FileName>Drivers\PassiveBackupDriverBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.ConfigManager">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAIAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>ConfigManager.cs</FileName>
@@ -79,21 +82,31 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BakLib.BaculaBackup">
-    <Position X="13.75" Y="6" Width="1.5" />
+    <Position X="14.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>BaculaBackup.cs</FileName>
+      <FileName>Drivers\BaculaBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BakLib.SFTPBackup">
-    <Position X="2.75" Y="6" Width="1.5" />
+    <Position X="3" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>SFTPBackup.cs</FileName>
+      <HashCode>AAAAAAAAACAAAEBAAAAAAAEAAAAAAAAAIAgAAgAAAAA=</HashCode>
+      <FileName>Drivers\SFTPBackup.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="BakLib.SyncSetting">
+    <Position X="13.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIACAAIAAgAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SyncSetting.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_mode" />
+    </ShowAsAssociation>
+  </Class>
   <Interface Name="BakLib.IBackupDriver">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAABAAAAAAAQAAABAAAAAIAAAAAEAAAA=</HashCode>
       <FileName>IBackupDriver.cs</FileName>
@@ -103,24 +116,31 @@
     </ShowAsAssociation>
   </Interface>
   <Interface Name="BakLib.IStalker&lt;T&gt;">
-    <Position X="1.5" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="13" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IStalker.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="BakLib.IStalked&lt;T&gt;">
-    <Position X="3.75" Y="3.5" Width="1.5" />
+  <Interface Name="BakLib.IStalked&lt;T&gt;" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAAAAAAA=</HashCode>
       <FileName>IStalked.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="BakLib.BackupMode">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>BackupMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BakLib.SyncMode">
+    <Position X="10.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SyncMode.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

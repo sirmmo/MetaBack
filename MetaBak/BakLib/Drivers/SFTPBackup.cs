@@ -25,7 +25,13 @@ namespace BakLib
 
         public override void Activate()
         {
-            throw new NotImplementedException();
+            RemoteLogin l = new RemoteLogin();
+            if (l.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                host = l.Server;
+                username = l.Username;
+                password = l.Password;
+            }
         }
     }
 }

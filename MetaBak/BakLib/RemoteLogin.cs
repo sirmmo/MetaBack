@@ -27,13 +27,6 @@ namespace BakLib
             get { return password; }
             set { password = value; }
         }
-        private String local_path;
-
-        public String LocalPath
-        {
-            get { return local_path; }
-            set { local_path = value; }
-        }
         private String server;
 
         public String Server
@@ -58,7 +51,6 @@ namespace BakLib
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Username = _unBox.Text;
             this.Password = _pwBox.Text;
-            this.LocalPath = _lpBox.Text;
             this.Server = _rpBox.Text;
             this.Close();
         }
@@ -74,18 +66,9 @@ namespace BakLib
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog d = new FolderBrowserDialog();
-            if (d.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                _lpBox.Text = d.SelectedPath;
-            }
-
-        }
-
         private void textChanged(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(_lpBox.Text) || String.IsNullOrEmpty(_pwBox.Text) || String.IsNullOrEmpty(_rpBox.Text) || String.IsNullOrEmpty(_unBox.Text))
+            if ( String.IsNullOrEmpty(_pwBox.Text) || String.IsNullOrEmpty(_rpBox.Text) || String.IsNullOrEmpty(_unBox.Text))
             {
                 button2.Enabled = false;
             }

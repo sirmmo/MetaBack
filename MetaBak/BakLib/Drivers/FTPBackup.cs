@@ -66,7 +66,6 @@ namespace BakLib
                 server = l.Server;
                 username = l.Username;
                 password = l.Password;
-                local_path = l.LocalPath;
             }
         }
     }

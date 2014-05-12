@@ -30,8 +30,9 @@ namespace MetaBak
                 _list.Clear();
                 foreach (BackupDriverBase back in value)
                 {
-
-                    _list.Items.Add(new ListViewItem(back.ToString()));
+                    ListViewItem lvi = new ListViewItem(back.ToString());
+                    lvi.Tag = back;
+                    _list.Items.Add(lvi);
                 }
         }
 
@@ -47,6 +48,20 @@ namespace MetaBak
 
             b.Add(new FTPBackup());
             b.Start();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            SyncForm sf = new SyncForm();
+            if (sf.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                IBackupDriver d = (IBackupDriver)_list.SelectedItems[0].Tag;
+                SyncSetting s = new SyncSetting();
+                s.Backup = d;
+                s.Path = sf.Path;
+                s.Mode = SyncMode.Changes;
+                listView1.Items.Add(new ListViewItem());
+            }
         }
     }
 }

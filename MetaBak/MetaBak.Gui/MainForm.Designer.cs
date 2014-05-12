@@ -38,20 +38,24 @@
             this.webDavToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.dropBozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skyDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.googleDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ownCloudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bAculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rsyncdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.skyDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.googleDriveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -68,6 +72,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.listView1);
+            this.splitContainer1.Panel2.Controls.Add(this.toolStrip2);
             this.splitContainer1.Panel2.Controls.Add(this.statusStrip1);
             this.splitContainer1.Size = new System.Drawing.Size(1397, 666);
             this.splitContainer1.SplitterDistance = 465;
@@ -125,7 +131,6 @@
             // 
             // sFTPToolStripMenuItem
             // 
-            this.sFTPToolStripMenuItem.Enabled = false;
             this.sFTPToolStripMenuItem.Name = "sFTPToolStripMenuItem";
             this.sFTPToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.sFTPToolStripMenuItem.Text = "SFTP";
@@ -148,6 +153,20 @@
             this.dropBozToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.dropBozToolStripMenuItem.Text = "DropBox";
             this.dropBozToolStripMenuItem.Click += new System.EventHandler(this.dropBozToolStripMenuItem_Click);
+            // 
+            // skyDriveToolStripMenuItem
+            // 
+            this.skyDriveToolStripMenuItem.Enabled = false;
+            this.skyDriveToolStripMenuItem.Name = "skyDriveToolStripMenuItem";
+            this.skyDriveToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.skyDriveToolStripMenuItem.Text = "SkyDrive";
+            // 
+            // googleDriveToolStripMenuItem
+            // 
+            this.googleDriveToolStripMenuItem.Enabled = false;
+            this.googleDriveToolStripMenuItem.Name = "googleDriveToolStripMenuItem";
+            this.googleDriveToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.googleDriveToolStripMenuItem.Text = "Google Drive";
             // 
             // ownCloudToolStripMenuItem
             // 
@@ -189,19 +208,35 @@
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(133, 20);
             // 
-            // skyDriveToolStripMenuItem
+            // toolStrip2
             // 
-            this.skyDriveToolStripMenuItem.Enabled = false;
-            this.skyDriveToolStripMenuItem.Name = "skyDriveToolStripMenuItem";
-            this.skyDriveToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.skyDriveToolStripMenuItem.Text = "SkyDrive";
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(927, 25);
+            this.toolStrip2.TabIndex = 1;
+            this.toolStrip2.Text = "toolStrip2";
             // 
-            // googleDriveToolStripMenuItem
+            // listView1
             // 
-            this.googleDriveToolStripMenuItem.Enabled = false;
-            this.googleDriveToolStripMenuItem.Name = "googleDriveToolStripMenuItem";
-            this.googleDriveToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.googleDriveToolStripMenuItem.Text = "Google Drive";
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 25);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(927, 615);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "_addSyncPath";
+            this.toolStripButton1.ToolTipText = "Add Sync Path";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // MainForm
             // 
@@ -222,6 +257,8 @@
             this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -245,6 +282,9 @@
         private System.Windows.Forms.ToolStripMenuItem rsyncdToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem skyDriveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem googleDriveToolStripMenuItem;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
